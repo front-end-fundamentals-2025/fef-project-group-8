@@ -1,0 +1,27 @@
+/* BACKGROUND AND FONTS */
+* {
+  background-color: #ffffff;
+  font-family: "Archivo", serif;
+  font-weight: 400;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* END OF BACKGROUND AND FONTS*/
+
+/* HEADER */
+/* header {
+  display: flex; 
+  flex-direction: row; 
+  align-items: center; 
+} */
+
+/*MENU BAR*/
+.linksheader {
+  display: flex;
+  list-style: none;
+}
+li {
+  margin-left: 4rem;
+}
+/* END OF HEADER*/
