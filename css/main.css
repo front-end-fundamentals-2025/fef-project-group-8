@@ -40,10 +40,14 @@ html {
   list-style: none;
   justify-content: center;
   padding-top: 2rem;
-  padding-bottom: 2rem;
+  padding-bottom: 20rem;
   background-image: url(/img/background.png);
   background-size: cover;
   background-position: 90%;
+}
+.linksheader a {
+  color: black;
+  font-weight: bold;
 }
 li {
   margin-left: 4rem;
