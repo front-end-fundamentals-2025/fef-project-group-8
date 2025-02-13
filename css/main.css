@@ -1,4 +1,9 @@
 /* BACKGROUND AND FONTS */
+/*Help from second year NMD student Erik Sandquist*/
+html {
+  background-color: #ffffff;
+}
+/* End of help from NMD student*/
 * {
   font-family: "Archivo", serif;
   font-weight: 400;
@@ -8,11 +13,7 @@
 }
 /* END OF BACKGROUND AND FONTS*/
 
-html {
-  background-color: #ffffff;
-}
 /* HEADER */
-
 .menu {
   display: flex;
   flex-direction: row;
@@ -22,6 +23,7 @@ html {
   padding-right: 1rem;
   padding-top: 1rem;
 }
+/*END OF HEADER*/
 
 /* .icons {
   /* text-align: right; */
@@ -52,4 +54,51 @@ html {
 li {
   margin-left: 4rem;
 }
-/* END OF HEADER*/
+/* END OF MENU BAR*/
+
+/*MAIN PAGE - QUOTE*/
+#quote {
+  margin: 4rem;
+  text-align: center;
+}
+
+/*MAIN PAGE - SCROLLBAR*/
+div.scrollmenu {
+  display: flex;
+  background-color: beige;
+  overflow: auto;
+  white-space: nowrap;
+}
+
+div.scrollmenu img {
+  width: 250px;
+  height: 300px;
+}
+
+div.scrollmenu a {
+  display: block;
+  position: relative;
+  color: black;
+  text-align: center;
+  margin-right: 50px;
+  text-decoration: none;
+  list-style: none;
+  width: 250px;
+  height: 300px;
+}
+
+div.scrollmenu a:hover {
+  background-color: #ffffff;
+}
+/* END OF MAIN PAGE */
+
+/*FOOTER - LINKS*/
+footer {
+  background-color: beige;
+  margin-top: 30px;
+}
+
+ul.linksfooter a {
+  color: black;
+  list-style: none;
+}
