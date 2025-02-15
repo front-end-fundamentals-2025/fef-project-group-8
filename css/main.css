@@ -13,6 +13,7 @@ html {
 }
 /* END OF BACKGROUND AND FONTS*/
 
+/* CSS for Index html */
 /* HEADER */
 .menu {
   display: flex;
@@ -39,6 +40,7 @@ html {
 /*MENU BAR*/
 .linksheader {
   display: flex;
+  gap: 4rem;
   list-style: none;
   justify-content: center;
   padding-top: 2rem;
@@ -51,9 +53,6 @@ html {
   color: black;
   font-weight: bold;
 }
-li {
-  margin-left: 4rem;
-}
 /* END OF MENU BAR*/
 
 /*MAIN PAGE - QUOTE*/
@@ -63,10 +62,13 @@ li {
 }
 
 /*MAIN PAGE - SCROLLBAR*/
+/*used w3 schools, do we need to site? https://www.w3schools.com/howto/howto_css_menu_horizontal_scroll.asp*/
 div.scrollmenu {
   display: flex;
+  gap: 2rem;
   background-color: beige;
-  overflow: auto;
+  overflow-x: auto;
+  overflow-y: hidden;
   white-space: nowrap;
 }
 
@@ -80,7 +82,6 @@ div.scrollmenu a {
   position: relative;
   color: black;
   text-align: center;
-  margin-right: 50px;
   text-decoration: none;
   list-style: none;
   width: 250px;
@@ -95,10 +96,76 @@ div.scrollmenu a:hover {
 /*FOOTER - LINKS*/
 footer {
   background-color: beige;
-  margin-top: 30px;
+  margin-top: 6rem;
+  padding-top: 4rem;
+  padding-bottom: 2rem;
+  padding-left: 2rem;
 }
 
-ul.linksfooter a {
+.linksfooter a {
   color: black;
   list-style: none;
 }
+/* END CSS for Index html */
+
+/* CSS for livingroom html */
+
+#sale {
+  margin: 2rem;
+  text-align: center;
+  color: rgb(153, 201, 255);
+  text-transform: uppercase;
+  font-weight: 900;
+  font-size: 24pt;
+}
+
+#h1lr {
+  margin-top: 1rem;
+  text-align: center;
+}
+
+div.lrmenu {
+  display: flex;
+  gap: 2rem;
+  background-color: beige;
+  overflow-x: auto;
+  overflow-y: hidden;
+  white-space: nowrap;
+  padding: 1rem;
+  margin-top: 2rem;
+}
+
+div.lrmenu a {
+  display: block;
+  position: relative;
+  color: black;
+  text-align: center;
+  text-decoration: none;
+  list-style: none;
+}
+
+div.lrmenu a:hover {
+  background-color: #ffffff;
+}
+
+.products {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  margin-left: 2rem;
+  margin-right: 2rem;
+  margin-top: 2rem;
+}
+
+.products img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+.products figcaption {
+  color: black;
+  text-decoration: none;
+}
+
+/* END CSS for livingroom html */
