@@ -3,6 +3,10 @@
 html {
   background-color: #ffffff;
 }
+
+body {
+  padding-top: 6rem;
+}
 /* End of help from NMD student*/
 * {
   font-family: "Archivo", serif;
@@ -19,11 +23,34 @@ html {
   display: flex;
   flex-direction: row;
   align-items: center;
-  padding-left: 1rem;
   justify-content: space-between;
-  padding-right: 1rem;
-  padding-top: 1rem;
+  padding-right: 2rem;
+  padding-left: 2rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid black;
+  /* help from chatGPT start */
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 6rem;
+  background: white;
+  z-index: 1000; /* Ensures it stays above other elements */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  /* help from chatGPT end */
 }
+
+#name {
+  text-transform: uppercase;
+  font-weight: 250;
+  font-size: 20pt;
+}
+
+.icons {
+  display: flex;
+  gap: 1rem;
+}
+
 /*END OF HEADER*/
 
 /* .icons {
@@ -43,15 +70,34 @@ html {
   gap: 4rem;
   list-style: none;
   justify-content: center;
-  padding-top: 2rem;
   padding-bottom: 20rem;
   background-image: url(/img/background.png);
   background-size: cover;
   background-position: 90%;
+  font-size: 15pt;
+  padding-top: 8rem;
 }
+
 .linksheader a {
   color: black;
   font-weight: bold;
+}
+
+.button {
+  display: block;
+  width: fit-content;
+  border: 1px solid black;
+  background-color: white;
+  text-decoration: none;
+  transition: all 0.3s;
+  padding: 8px 16px;
+  transform: scale(1);
+}
+
+.button:hover {
+  color: white;
+  background-color: black;
+  transform: scale(1.2);
 }
 /* END OF MENU BAR*/
 
