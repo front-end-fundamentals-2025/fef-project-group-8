@@ -29,7 +29,7 @@ body {
   padding-top: 2rem;
   padding-bottom: 2rem;
   border-bottom: 1px solid black;
-  /* help from chatGPT https://chatgpt.com/share/67b34778-30e4-8007-a281-beb717b84785 */
+  /* help from chatGPT. Accessed: 16/02/25 https://chatgpt.com/share/67b34778-30e4-8007-a281-beb717b84785 */
   position: fixed;
   top: 0;
   width: 100%;
@@ -156,21 +156,12 @@ footer {
 
 /* CSS for livingroom html */
 
-#sale {
-  margin: 2rem;
-  text-align: center;
-  color: rgb(153, 201, 255);
-  text-transform: uppercase;
-  font-weight: 900;
-  font-size: 24pt;
-}
-
 #h1lr {
-  margin-top: 1rem;
+  margin-top: 2rem;
   text-align: center;
 }
 
-div.lrmenu {
+/* div.lrmenu {
   display: flex;
   gap: 2rem;
   background-color: beige;
@@ -192,6 +183,48 @@ div.lrmenu a {
 
 div.lrmenu a:hover {
   background-color: #ffffff;
+} */
+
+@media screen and (max-width: 800px) {
+  div.lrmenu {
+    display: flex;
+    gap: 2rem;
+    overflow-x: auto;
+    overflow-y: hidden;
+    white-space: nowrap;
+    padding: 1rem;
+    margin-top: 2rem;
+  }
+
+  div.lrmenu a {
+    display: block;
+    position: relative;
+    color: black;
+    text-align: center;
+    text-decoration: none;
+    list-style: none;
+  }
+
+  div.lrmenu a:hover {
+    background-color: #ffffff;
+  }
+
+  .button .lrmenu {
+    display: block;
+    width: fit-content;
+    border: 1px solid black;
+    background-color: white;
+    text-decoration: none;
+    transition: all 0.3s;
+    padding: 8px 16px;
+    transform: scale(1);
+  }
+
+  .lrmenu:hover {
+    color: white;
+    background-color: black;
+    transform: scale(1.2);
+  }
 }
 
 .products {
