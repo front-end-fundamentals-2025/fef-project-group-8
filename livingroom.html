@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Livingroom</title>
     <link rel="stylesheet" href="css/main.css" />
+    <script src="js/main.js" defer></script>
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -16,6 +17,23 @@
   <body>
     <header>
       <section class="menu">
+        <!-- <a id="hamburgericon" href="#">
+            <img src="img/align-justify.png" alt="Hamburger"
+          /></a> -->
+        <div id="myhamburgermenu" class="hamburgermenu">
+          <a href="javascript:viod(0)" class="closebtn" onclick="closeNav()"
+            >&times;</a
+          >
+          <a href="livingroom.html">Livingroom</a>
+          <a href="#">Bedroom</a>
+          <a href="#">Kitchen</a>
+          <a href="#">Bathroom</a>
+          <a href="#">Hallway</a>
+        </div>
+        <button class="openbtn" onclick="openNav()">
+          <img src="img/align-justify.png" alt="hamburger" />
+        </button>
+
         <a id="logo" href="index.html">VELORA INTERIOR</a>
         <div class="icons">
           <a href="#"> <img src="img/Lucide Icon.png" alt="Account" /></a>

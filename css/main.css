@@ -151,10 +151,10 @@ div.scrollmenu {
   white-space: nowrap;
 }
 
-div.scrollmenu img {
+/* div.scrollmenu img {
   width: 20rem;
   height: 30rem;
-}
+} */
 
 div.scrollmenu a {
   display: block;
@@ -164,11 +164,42 @@ div.scrollmenu a {
   text-decoration: none;
   list-style: none;
   width: 20rem;
-  height: 30rem;
+  height: 25rem;
 }
 
-div.scrollmenu a:hover {
-  background-color: #ffffff;
+div.scrollmenu #livingroom {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url(/img/livingroom.jpg);
+}
+
+div.scrollmenu #bedroom {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url(/img/bedroom.jpg);
+}
+
+div.scrollmenu #kitchen {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url(/img/kitchen.jpg);
+}
+
+div.scrollmenu #bathroom {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url(/img/bathroom.jpg);
+}
+
+div.scrollmenu #hallway {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url(/img/hallway.jpg);
 }
 
 .sale {
