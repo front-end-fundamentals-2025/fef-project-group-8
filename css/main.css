@@ -152,8 +152,7 @@ div.scrollmenu {
 }
 
 /* div.scrollmenu img {
-  width: 20rem;
-  height: 30rem;
+  object-fit: contain;
 } */
 
 div.scrollmenu a {
@@ -165,41 +164,74 @@ div.scrollmenu a {
   list-style: none;
   width: 20rem;
   height: 25rem;
-}
-
-div.scrollmenu #livingroom {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+}
+
+div.scrollmenu .button {
+  margin-top: 12rem;
+  margin-left: 5rem;
+}
+
+div.scrollmenu #livingroom {
   background-image: url(/img/livingroom.jpg);
 }
 
 div.scrollmenu #bedroom {
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
   background-image: url(/img/bedroom.jpg);
 }
 
 div.scrollmenu #kitchen {
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
   background-image: url(/img/kitchen.jpg);
 }
 
 div.scrollmenu #bathroom {
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
   background-image: url(/img/bathroom.jpg);
 }
 
 div.scrollmenu #hallway {
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
   background-image: url(/img/hallway.jpg);
+}
+
+/* @media for picture scrollmenu */
+/* Ipads/ medium screens*/
+@media screen and (max-width: 800px) {
+  div.scrollmenu a {
+    width: 18rem;
+    height: 18rem;
+  }
+
+  div.scrollmenu .button {
+    margin-top: 9rem;
+    margin-left: 4rem;
+  }
+}
+
+/* thelephones/ small screens*/
+@media screen and (max-width: 600px) {
+  div.scrollmenu a {
+    width: 8rem;
+    height: 13rem;
+  }
+
+  div.scrollmenu .button {
+    margin-top: 6rem;
+    margin-left: 2px;
+  }
+
+  /* .button {
+    display: block;
+    width: fit-content;
+    text-decoration: none;
+    color: black;
+    background-color: rgb(241, 241, 228);
+    border: 1px solid rgb(241, 241, 228);
+    padding: 4px 8px;
+    font-size: 8pt;
+    transition: all 0.3s;
+    transform: scale(1);
+  } */
 }
 
 .sale {
@@ -262,6 +294,7 @@ div.lrmenu a:hover {
   transform: scale(1.1);
 }
 
+/* @media for livingrrom scrollmenu, categories */
 @media screen and (max-width: 800px) {
   div.lrmenu {
     display: flex;
