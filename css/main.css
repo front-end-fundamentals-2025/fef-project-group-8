@@ -294,6 +294,7 @@ div.lrmenu a:hover {
   }
 }
 
+/*The displayed products*/
 .products {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -314,4 +315,25 @@ div.lrmenu a:hover {
   text-decoration: none;
 }
 
+/*Hoover over img to see another product img*/
+.images img {
+  width: 100%;
+  transition: opacity 0.5s;
+}
+
+.images:hover .image1 {
+  opacity: 1;
+}
+
+.images:hover .image2 {
+  opacity: 1;
+}
+
+.image2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  opacity: 0;
+}
 /* END CSS for livingroom html */
