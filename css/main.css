@@ -99,8 +99,6 @@ body {
 }
 
 .shoppingcart a {
-  padding-left: 2rem;
-  padding-bottom: 2rem;
   text-decoration: none;
   font-size: 15pt;
   color: rgb(39, 39, 39);
@@ -108,15 +106,47 @@ body {
   transition: 0.5s;
 }
 
-.shoppingcart a:hover {
+.shoppingcart #order {
+  font-size: 20pt;
+  border-bottom: 2pt solid black;
+  width: fit-content;
+  margin-top: 2rem;
+  margin-left: 2rem;
+}
+
+.shoppingcart #bluechair {
+  width: 8rem;
+  height: 12rem;
+  margin-top: 2rem;
+  margin-left: 2rem;
+}
+
+.shoppingcart #cartinfo {
+  margin-top: 1rem;
+  margin-left: 2rem;
+}
+
+.shoppingcart #checkout {
+  border: 1px solid rgb(164, 199, 245);
+  background-color: rgb(164, 199, 245);
+  width: fit-content;
+  padding: 8px 16px;
+  margin: 2rem;
+  transition: all 0.3s;
+  transform: scale(1);
+}
+
+.shoppingcart #checkout:hover {
   color: black;
-  font-weight: bold;
+  background-color: rgb(135, 182, 242);
+  border: rgb(135, 182, 242);
+  transform: scale(1.1);
 }
 
 .shoppingcart #closebtnshopping {
   position: absolute;
   top: 1rem;
-  right: 2rem;
+  left: 2rem;
   font-size: 20pt;
 }
 
