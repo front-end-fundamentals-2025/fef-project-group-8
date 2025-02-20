@@ -42,7 +42,7 @@ body {
 
 .hamburgermenu {
   height: 100%;
-  width: 0;
+  width: 20rem;
   position: fixed;
   z-index: 1;
   top: 0;
@@ -68,14 +68,59 @@ body {
   font-weight: bold;
 }
 
-.hamburgermenu .closebtn {
+.hamburgermenu #closebtnhamburger {
   position: absolute;
   top: 1rem;
   right: 2rem;
   font-size: 20pt;
 }
 
-.openbtn {
+#openbtnhamburger {
+  background-color: white;
+  border: none;
+}
+
+/* for both hamburgermenu and shoppingcart */
+.hamburgermenu .shoppingcart {
+  display: none;
+}
+
+.shoppingcart {
+  height: 100%;
+  width: 20rem;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  background-color: rgb(241, 241, 228);
+  overflow-x: hidden;
+  padding-top: 2rem;
+  transition: 0.5s;
+}
+
+.shoppingcart a {
+  padding-left: 2rem;
+  padding-bottom: 2rem;
+  text-decoration: none;
+  font-size: 15pt;
+  color: rgb(39, 39, 39);
+  display: block;
+  transition: 0.5s;
+}
+
+.shoppingcart a:hover {
+  color: black;
+  font-weight: bold;
+}
+
+.shoppingcart #closebtnshopping {
+  position: absolute;
+  top: 1rem;
+  right: 2rem;
+  font-size: 20pt;
+}
+
+#openbtnshopping {
   background-color: white;
   border: none;
 }

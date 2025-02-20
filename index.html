@@ -18,11 +18,11 @@
   <body>
     <header>
       <section class="menu">
-        <!-- <a id="hamburgericon" href="#">
-            <img src="img/align-justify.png" alt="Hamburger"
-          /></a> -->
         <div id="myhamburgermenu" class="hamburgermenu">
-          <a href="javascript:viod(0)" class="closebtn" onclick="closeNav()"
+          <a
+            href="javascript:void(0)"
+            id="closebtnhamburger"
+            onclick="closeHamburgerNav()"
             >&times;</a
           >
           <a href="livingroom.html">Livingroom</a>
@@ -31,7 +31,7 @@
           <a href="#">Bathroom</a>
           <a href="#">Hallway</a>
         </div>
-        <button class="openbtn" onclick="openNav()">
+        <button id="openbtnhamburger" onclick="openHamburgerNav()">
           <img src="img/align-justify.png" alt="hamburger" />
         </button>
 
@@ -39,9 +39,21 @@
         <div class="icons">
           <a href="#"> <img src="img/Lucide Icon.png" alt="Account" /></a>
           <a href="#"> <img src="img/Heart icon.png" alt="Like" /></a>
-          <a href="#">
-            <img src="img/Shopping Cart Icon.png" alt="Shopping Cart"
-          /></a>
+          <button id="openbtnshopping" onclick="openShoppingNav()">
+            <img src="img/Shopping Cart Icon.png" alt="Shopping Cart" />
+          </button>
+        </div>
+
+        <div id="myshoppingcart" class="shoppingcart">
+          <a
+            href="javascript:void(0)"
+            id="closebtnshopping"
+            onclick="closeShoppingNav()"
+            >&times;</a
+          >
+          <p></p>
+          <img src="img/chair.webp" alt="Blue Chair" />
+          <a href="#">checkout</a>
         </div>
       </section>
 
