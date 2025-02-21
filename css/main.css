@@ -23,11 +23,12 @@ body {
   display: flex;
   flex-direction: row;
   align-items: center;
+  /* start ChatGPT. Accessed: 21/02/25 https://chatgpt.com/share/67b872ad-9090-8007-83f7-a1b174d13e28 */
+  position: relative;
+  /* End ChatGPT*/
   justify-content: space-between;
   padding-right: 2rem;
   padding-left: 2rem;
-  padding-top: 2rem;
-  padding-bottom: 2rem;
   border-bottom: 1px solid black;
   /* help from chatGPT. Accessed: 16/02/25 https://chatgpt.com/share/67b34778-30e4-8007-a281-beb717b84785 */
   position: fixed;
@@ -38,6 +39,33 @@ body {
   z-index: 1000; /* Ensures it stays above other elements */
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   /* help from chatGPT end */
+}
+
+#logo {
+  /* Start ChatGPT. Accessed: 21/02/25 https://chatgpt.com/share/67b872ad-9090-8007-83f7-a1b174d13e28 */
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  /* End ChatGPT*/
+  text-transform: uppercase;
+  font-weight: 250;
+  font-size: 20pt;
+  text-decoration: none;
+  color: black;
+}
+
+/* Media for logo */
+@media screen and (max-width: 600px) {
+  #logo {
+    font-size: 14pt;
+    left: 43%;
+    transform: translateX(-57%);
+  }
+}
+
+.icons {
+  display: flex;
+  gap: 1rem;
 }
 
 .hamburgermenu {
@@ -156,36 +184,25 @@ body {
   border: none;
 }
 
-#logo {
-  text-transform: uppercase;
-  font-weight: 250;
-  font-size: 20pt;
-  text-decoration: none;
-  color: black;
-}
-
-.icons {
-  display: flex;
-  gap: 1rem;
-}
-
 /*END OF HEADER*/
 
 /*MENU BAR*/
 .linksheader {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  padding-bottom: 20rem;
+  align-items: center;
+  justify-content: flex-end;
+  padding-bottom: 3rem;
+  height: 20rem;
   background-image: url(/img/homepage2.jpg);
   background-size: cover;
-  background-position: 100%;
+  background-position: center;
 }
 
 .buttonsection {
   display: flex;
   gap: 4rem;
-  /* justify-content: center; */
+  justify-content: center;
   /* padding-top: 30rem; */
 }
 
@@ -209,6 +226,26 @@ body {
   transform: scale(1.1);
 }
 
+/* Media for buttons in linkheader */
+@media screen and (max-width: 800px) {
+  .buttonsection {
+    gap: 2rem;
+  }
+  .button {
+    font-size: 12pt;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .linksheader {
+    height: 12rem;
+  }
+
+  .buttonsection {
+    display: none;
+  }
+}
+
 /* END OF MENU BAR*/
 
 /*MAIN PAGE - QUOTE*/
@@ -217,8 +254,21 @@ body {
   text-align: center;
 }
 
+/* Media for quote */
+@media screen and (max-width: 800px) {
+  #quote {
+    margin: 4rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  #quote {
+    margin: 2rem;
+  }
+}
+
 /*MAIN PAGE - SCROLLBAR*/
-/*used w3 schools, do we need to site? https://www.w3schools.com/howto/howto_css_menu_horizontal_scroll.asp*/
+/*used and inspired by w3 schools, do we need to site? Accessed: 13/02/25 https://www.w3schools.com/howto/howto_css_menu_horizontal_scroll.asp*/
 div.scrollmenu {
   display: flex;
   gap: 2rem;
@@ -236,12 +286,9 @@ div.scrollmenu a {
   text-align: center;
   text-decoration: none;
   list-style: none;
-  /* width: 20rem;
-  height: 25rem; */
 }
 
 div.scrollmenu .button {
-  /* margin-left: 5rem; */
   margin: auto;
   margin-top: 12rem;
   font-size: 10pt;
@@ -249,8 +296,8 @@ div.scrollmenu .button {
 }
 
 div.scrollmenu div {
-  width: 20rem;
-  height: 30rem;
+  width: 100%;
+  height: 25rem;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -279,41 +326,28 @@ div.scrollmenu #hallway {
 /* @media for picture scrollmenu */
 /* Ipads/ medium screens*/
 @media screen and (max-width: 800px) {
-  div.scrollmenu a {
-    width: 18rem;
-    height: 18rem;
+  div.scrollmenu div {
+    width: 100%;
+    height: 10rem;
   }
 
   div.scrollmenu .button {
-    margin-top: 9rem;
-    margin-left: 4rem;
+    margin-top: 6rem;
   }
 }
 
 /* thelephones/ small screens*/
 @media screen and (max-width: 600px) {
-  div.scrollmenu a {
-    width: 8rem;
-    height: 13rem;
+  div.scrollmenu div {
+    width: 100%;
+    height: 8rem;
   }
 
   div.scrollmenu .button {
-    margin-top: 6rem;
-    margin-left: 2px;
+    margin-top: 4rem;
+    font-size: 6pt;
+    padding: 4px;
   }
-
-  /* .button {
-    display: block;
-    width: fit-content;
-    text-decoration: none;
-    color: black;
-    background-color: rgb(241, 241, 228);
-    border: 1px solid rgb(241, 241, 228);
-    padding: 4px 8px;
-    font-size: 8pt;
-    transition: all 0.3s;
-    transform: scale(1);
-  } */
 }
 
 .sale {
@@ -326,6 +360,12 @@ div.scrollmenu #hallway {
   width: 100%;
   height: auto;
   object-fit: contain;
+}
+
+@media screen and (max-width: 600px) {
+  .sale {
+    margin-top: 3rem;
+  }
 }
 /* END OF MAIN PAGE */
 
