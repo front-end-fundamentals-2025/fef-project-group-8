@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chair</title>
+    <link rel="stylesheet" href="css/main.css" />
+    <script src="js/main.js" defer></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <section class="menu">
+        <div id="myhamburgermenu" class="hamburgermenu">
+          <a
+            href="javascript:void(0)"
+            id="closebtnhamburger"
+            onclick="closeHamburgerNav()"
+            >&times;</a
+          >
+          <a href="livingroom.html">Livingroom</a>
+          <a href="#">Bedroom</a>
+          <a href="#">Kitchen</a>
+          <a href="#">Bathroom</a>
+          <a href="#">Hallway</a>
+        </div>
+        <button id="openbtnhamburger" onclick="openHamburgerNav()">
+          <img src="img/align-justify.png" alt="hamburger" />
+        </button>
+
+        <a id="logo" href="index.html">VELORA INTERIOR</a>
+        <div class="icons">
+          <a href="#"> <img src="img/Lucide Icon.png" alt="Account" /></a>
+          <a href="#"> <img src="img/Heart icon.png" alt="Like" /></a>
+          <button id="openbtnshopping" onclick="openShoppingNav()">
+            <img src="img/Shopping Cart Icon.png" alt="Shopping Cart" />
+          </button>
+        </div>
+
+        <div id="myshoppingcart" class="shoppingcart">
+          <a
+            href="javascript:void(0)"
+            id="closebtnshopping"
+            onclick="closeShoppingNav()"
+            >&times;</a
+          >
+          <p id="order">What I ordered</p>
+          <img id="bluechair" src="img/chair.webp" alt="Blue Chair" />
+          <p id="cartinfo">Blue chair</p>
+          <a id="checkout" href="#">checkout</a>
+        </div>
+      </section>
+    </header>
+    <main>
+      <div class="chair-section">
+        <div class="chair-container">
+          <img src="img/chair.webp" alt="Chair 1" />
+          <img src="img/chair1.webp" alt="Chair 2" />
+          <img src="img/chair3.webp" alt="Chair 3" />
+          <img src="img/chair4.webp" alt="Chair 4" />
+          <img src="img/chair5.webp" alt="Chair 5" />
+        </div>
+        <div class="chair-info">
+          <h2>Blue chair</h2>
+          <h3>700 SEK</h3>
+          <p>Helooo, its a nice chair, i promise. slay, go girl</p>
+          <button class="purchase-button">Purchase Item</button>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <nav>
+        <ul class="linksfooter">
+          <a href="#"><li>About us</li></a>
+          <br />
+          <a href="#"><li>Terms and conditions</li></a>
+          <br />
+        </ul>
+      </nav>
+      © Velora Interior 2025
+    </footer>
+  </body>
+</html>

@@ -459,12 +459,6 @@ div.lrmenu a:hover {
   margin-top: 2rem;
 }
 
-.products img {
-  width: 100%;
-  height: auto;
-  object-fit: contain;
-}
-
 .products figcaption {
   color: black;
   text-decoration: none;
@@ -492,3 +486,53 @@ div.lrmenu a:hover {
   opacity: 0;
 }
 /* END CSS for livingroom html */
+
+/* CSS for chair.html*/
+.chair-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  margin: 2rem;
+}
+
+/*Inspiration from W3 Schools, Accesed: 21/02/25 https://www.w3schools.com/howto/howto_css_image_gallery_scroll.asp*/
+.chair-container {
+  display: flex;
+  justify-content: flex-start;
+  overflow-x: auto;
+  white-space: nowrap;
+  gap: 0rem;
+  padding: 0rem;
+  scrollbar-width: none;
+  max-width: 100;
+}
+
+.chair-container::-webkit-scrollbar {
+  display: none;
+}
+
+.chair-container img {
+  width: 20rem;
+  height: auto;
+  object-fit: contain;
+  padding: 1rem;
+  flex-shrink: 0;
+}
+/*End of inspiration from W3 Schools*/
+
+.chair-info {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.purchase-button {
+  background-color: black;
+  color: white;
+  padding: 1rem 2rem;
+  border: none;
+  cursor: pointer;
+}
+
+/* END of chair.html */
