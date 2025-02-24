@@ -536,3 +536,10 @@ div.lrmenu a:hover {
 }
 
 /* END of chair.html */
+
+/* CSS for lrmenu.chairs.html */
+#lrmenuchairs {
+  margin-top: 2rem;
+  text-align: center;
+}
+/* END of lrmenu.chairs.html */
