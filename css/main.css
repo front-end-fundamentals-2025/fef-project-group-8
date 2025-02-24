@@ -491,7 +491,7 @@ div.lrmenu a:hover {
 .chair-section {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  align-items: center;
+  align-items: top;
   margin: 2rem;
 }
 
@@ -528,13 +528,49 @@ div.lrmenu a:hover {
 }
 
 .purchase-button {
-  background-color: black;
-  color: white;
+  background-color: rgb(241, 241, 228);
+  color: black;
+  font-weight: bold;
   padding: 1rem 2rem;
   border: none;
   cursor: pointer;
 }
 
+.product-attributes {
+  display: flex;
+  gap: 1rem;
+}
+
+.selectamount {
+  background-color: rgb(241, 241, 228);
+  color: black;
+  padding: 1rem;
+  padding-right: 4rem;
+  border: none;
+  cursor: pointer;
+}
+
+#hearticon-chair {
+  padding: 0.7rem;
+  padding-top: 0.75rem;
+}
+
+#product-info {
+  display: flex;
+  gap: 1rem;
+}
+
+.information {
+  font-weight: bold;
+}
+
+#description {
+  display: none;
+}
+
+#description.visible {
+  display: block;
+}
 /* END of chair.html */
 
 /* CSS for lrmenu.chairs.html */
