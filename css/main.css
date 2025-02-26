@@ -378,10 +378,11 @@ footer {
   padding-left: 2rem;
 }
 
-.linksfooter a {
-  color: black;
-  list-style: none;
+.linksfooter {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
 }
+
 /* END CSS for Index html */
 
 /* CSS for livingroom html */
