@@ -269,7 +269,31 @@ body {
 
 /*MAIN PAGE - SCROLLBAR*/
 /*used and inspired by w3 schools, do we need to site? Accessed: 13/02/25 https://www.w3schools.com/howto/howto_css_menu_horizontal_scroll.asp*/
+
 div.scrollmenu {
+  display: flex;
+  overflow: auto;
+  gap: 2rem;
+  /* white-space: nowrap; */
+}
+
+div.scrollmenu img {
+  width: 250px;
+  height: 350px;
+}
+
+div.scrollmenu a {
+  display: block;
+  position: relative;
+  color: black;
+  text-align: center;
+  text-decoration: none;
+  list-style: none;
+  width: 250px;
+  height: 360px;
+}
+
+/* div.scrollmenu {
   display: flex;
   gap: 2rem;
   background-color: white;
@@ -295,37 +319,10 @@ div.scrollmenu .button {
   padding: 8px;
 }
 
-div.scrollmenu div {
-  width: 100%;
-  height: 25rem;
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-
-div.scrollmenu #livingroom {
-  background-image: url(/img/livingroom.jpg);
-}
-
-div.scrollmenu #bedroom {
-  background-image: url(/img/bedroom.jpg);
-}
-
-div.scrollmenu #kitchen {
-  background-image: url(/img/kitchen.jpg);
-}
-
-div.scrollmenu #bathroom {
-  background-image: url(/img/bathroom.jpg);
-}
-
-div.scrollmenu #hallway {
-  background-image: url(/img/hallway.jpg);
-}
 
 /* @media for picture scrollmenu */
 /* Ipads/ medium screens*/
-@media screen and (max-width: 800px) {
+/* @media screen and (max-width: 800px) {
   div.scrollmenu div {
     width: 100%;
     height: 10rem;
@@ -337,7 +334,7 @@ div.scrollmenu #hallway {
 }
 
 /* thelephones/ small screens*/
-@media screen and (max-width: 600px) {
+/* @media screen and (max-width: 600px) {
   div.scrollmenu div {
     width: 100%;
     height: 8rem;
@@ -348,7 +345,7 @@ div.scrollmenu #hallway {
     font-size: 6pt;
     padding: 4px;
   }
-}
+} */
 
 .sale {
   display: grid;
