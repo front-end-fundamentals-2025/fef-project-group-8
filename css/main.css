@@ -513,10 +513,8 @@ div.lrmenu a:hover {
 
 .chair-container img {
   width: 20rem;
-  height: auto;
-  object-fit: contain;
   padding: 1rem;
-  flex-shrink: 0;
+  height: fit-content;
 }
 /*End of inspiration from W3 Schools*/
 
@@ -568,9 +566,14 @@ div.lrmenu a:hover {
   display: none;
 }
 
+#measurments.visible {
+  display: none;
+}
+
 #description.visible {
   display: block;
 }
+
 /* END of chair.html */
 
 /* CSS for lrmenu.chairs.html */
