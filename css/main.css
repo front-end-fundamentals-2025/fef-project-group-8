@@ -583,9 +583,71 @@ div.lrmenu a:hover {
 /* END of lrmenu.chairs.html */
 
 /*CSS for checkout.html*/
-.checkout {
+/* .checkout {
   padding: 1rem;
   border-radius: 1rem;
   background-color: rgb(241, 241, 228);
   width: 60%;
+} */
+
+input[type="text"],
+select {
+  background-color: rgb(241, 241, 228);
+  width: 70%;
+  padding: 1rem 1rem;
+  margin: 10px;
+  border: 1px solid rgb(233, 233, 203);
+}
+
+.costumerinfo,
+.cardinfo {
+  padding-left: 2rem;
+}
+
+h2 {
+  padding-top: 2rem;
+  padding-left: 2.5rem;
+}
+
+.cardnumber {
+  padding-top: 1rem;
+  padding-left: 0.5rem;
+}
+
+.deliveryinfo {
+  padding-top: 1rem;
+  padding-left: 5rem;
+  background-color: rgb(241, 241, 228);
+  width: 70%;
+  padding: 1rem 1rem;
+  border: 1px solid rgb(233, 233, 203);
+  margin-left: 2.5rem;
+  margin-top: 1rem;
+}
+
+.payment {
+  display: block;
+  width: fit-content;
+  text-decoration: none;
+  font-size: 15pt;
+  color: black;
+  background-color: rgb(233, 233, 203);
+  border: none;
+  padding: 8px 16px;
+  transition: all 0.3s;
+  transform: scale(1);
+  margin-top: 3rem;
+  margin-left: 2.5rem;
+  margin-bottom: 10rem;
+}
+
+.payment:hover {
+  color: black;
+  background-color: rgb(215, 215, 170);
+  border: none;
+  transform: scale(1.1);
+}
+
+.paymenticon {
+  size: 20%;
 }

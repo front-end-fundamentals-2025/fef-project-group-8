@@ -31,3 +31,5 @@ const textElement2 = document.getElementById("description");
 descriptionButton.addEventListener("click", function () {
   textElement2.classList.toggle("visible");
 });
+
+/*Basket*/

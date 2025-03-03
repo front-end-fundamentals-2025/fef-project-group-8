@@ -21,28 +21,90 @@
       </section>
     </header>
     <main>
-      <h1>Check out</h1>
-      <!-- <h2>Shopping cart</h2> -->
-      <div class="checkout">
-        <h2>Customer information</h2>
+      <h2>Basket</h2>
+
+      <h2>Costumer information</h2>
+      <div class="costumerinfo">
         <form>
-          <p>First name*</p>
-          <input type="text" name="Firstname" />
-          <p>Last name*</p>
-          <input type="Last name" />
-          <p>Email address*</p>
-          <input type="Email Address" />
-          <p>Address*</p>
-          <input type="Address" />
-          <p>Postal code*</p>
-          <input type="Postal code" />
-          <p>City*</p>
-          <input type="City" />
-          <p>Country*</p>
-          <input type="Country" />
-          <p>Phone number</p>
-          <input type="Phone number" />
+          <input
+            type="text"
+            id="email"
+            name="emailaddres"
+            placeholder="Email addres.."
+          />
+          <br />
+          <input
+            type="text"
+            id="fname"
+            name="firstname"
+            placeholder="First name.."
+          />
+          <input
+            type="text"
+            id="lname"
+            name="lastname"
+            placeholder="Last name.."
+          />
+          <br />
+          <input
+            type="text"
+            id="addres"
+            name="address"
+            placeholder="Addres.."
+          />
+          <input
+            type="text"
+            id="hnumber"
+            name="housenumber"
+            placeholder="House number.."
+          />
+          <br />
+          <input
+            type="text"
+            id="pcode"
+            name="postalcode"
+            placeholder="Postal code.."
+          />
+          <br />
+          <input type="text" id="city" name="city" placeholder="City.." />
+          <select name="country" id="country">
+            <option value="swe">Sweden</option>
+            <option value="dk">Denmark</option>
+            <option value="nr">Norway</option>
+            <option value="fi">Finland</option>
+          </select>
+          <input
+            type="text"
+            id="number"
+            name="number"
+            placeholder="Phone number.."
+          />
         </form>
+      </div>
+
+      <h2>Payment information</h2>
+      <div class="cardinfo">
+        <form>
+          <p class="cardnumber">Card number</p>
+          <input
+            type="text"
+            id="card"
+            name="cardnumber"
+            placeholder="1234 1234 1234 1234"
+          />
+          <input
+            type="text"
+            id="monthyear"
+            name="monthyear"
+            placeholder="MM/YY"
+          />
+          <input type="text" id="cvc" name="cvc" placeholder="CVC" />
+        </form>
+      </div>
+      <h2>Delivery</h2>
+      <p class="deliveryinfo">Free delivery - 3-5 working days</p>
+      <div>
+        <a class="payment" href="payment.html">Purchase</a>
       </div>
     </main>
   </body>
