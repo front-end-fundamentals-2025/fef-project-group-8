@@ -648,6 +648,34 @@ h2 {
   transform: scale(1.1);
 }
 
-.paymenticon {
-  size: 20%;
+#purchase {
+  text-align: center;
+  padding-bottom: 2rem;
+  font-weight: bold;
+}
+
+#purchaseicon {
+  display: block;
+  margin: 0 auto;
+  width: 12rem;
+  height: auto;
+  animation: purchaseiconBounce 1.2s ease-in-out;
+}
+
+@keyframes purchaseiconBounce {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+#purchase2 {
+  padding-top: 2rem;
+  text-align: center;
+  color: grey;
 }
