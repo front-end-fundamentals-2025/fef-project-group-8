@@ -274,7 +274,7 @@ div.scrollmenu {
   display: flex;
   overflow: auto;
   gap: 2rem;
-  justify-content: center;
+  margin: auto;
   /* white-space: nowrap; */
 }
 
@@ -678,4 +678,13 @@ h2 {
   padding-top: 2rem;
   text-align: center;
   color: grey;
+}
+
+/*Basket*/
+.cart-visable {
+  display: block !important;
+}
+
+#myshoppingcart {
+  display: none;
 }

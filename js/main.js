@@ -33,3 +33,35 @@ descriptionButton.addEventListener("click", function () {
 });
 
 /*Basket*/
+function toggleCart() {
+  document.getElementById("myshoppingcart").classList.toggle("cart-visable");
+}
+
+let cart = JSON.parse(localStorage.getItem("cart")) || [];
+
+function addToCart(item) {
+  let inCart = cart.find((cartItem) => item.name === cartItem.name);
+  if (inCart) {
+    inCart.amount += 1;
+  } else {
+    item.amount = 1;
+    cart.push(item);
+  }
+  drawCart();
+  saveCart();
+}
+
+function drawCart() {
+  let html = document.getElementById("myshoppingcart");
+
+  html.innerHTML = "";
+
+  cart.forEach((item) => {
+    html.innerHTML +=
+      "<p>" + item.name + " " + item.price + "sek, " + item.amount + "</p>";
+  });
+}
+
+function saveCart() {
+  localStorage.setItem("cart", JSON.stringify(cart));
+}
