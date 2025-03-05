@@ -20,7 +20,7 @@ function closeShoppingNav() {
 const measurmentsButton = document.getElementById("information1");
 const textElement1 = document.getElementById("measurments");
 
-measurmentsButton.addEventListener("click", function () {
+measurmentsButton?.addEventListener("click", function () {
   textElement1.classList.toggle("visible");
 });
 
@@ -28,7 +28,7 @@ measurmentsButton.addEventListener("click", function () {
 const descriptionButton = document.getElementById("information2");
 const textElement2 = document.getElementById("description");
 
-descriptionButton.addEventListener("click", function () {
+descriptionButton?.addEventListener("click", function () {
   textElement2.classList.toggle("visible");
 });
 
@@ -52,7 +52,7 @@ function addToCart(item) {
 }
 
 function drawCart() {
-  let html = document.getElementById("myshoppingcart");
+  let html = document.getElementById("order-products");
 
   html.innerHTML = "";
 
@@ -65,3 +65,5 @@ function drawCart() {
 function saveCart() {
   localStorage.setItem("cart", JSON.stringify(cart));
 }
+
+drawCart();
