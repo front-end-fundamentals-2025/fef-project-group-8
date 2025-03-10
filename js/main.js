@@ -51,50 +51,23 @@ function addToCart(item) {
   saveCart();
 }
 
-// function addToCart(item) {
-//   let inCart = cart.find((cartItem) => item.name === cartItem.name);
-
-//   if (inCart) {
-//     inCart.amount += 1;
-//   } else {
-//     item.amount = 1;
-//     cart.push(item);
-//   }
-
-//   saveCart();
-//   drawCart();
-// }
-
-// function drawCart() {
-//   let html = document.getElementById("order-products");
-
-//   html.innerHTML = "";
-
-//   cart.forEach((item) => {
-//     html.innerHTML +=
-//       "<p>" +
-//       item.name +
-//       " " +
-//       item.price +
-//       "sek, " +
-//       item.amount +
-//       "</p>" +
-//       <img src='"" + item.pictureImg + "'></img>;
-//   });
-// }
-
 function drawCart() {
   let html = document.getElementById("order-products");
-  html.innerHTML = ""; // Clear previous items
+
+  html.innerHTML = "";
 
   cart.forEach((item) => {
-    html.innerHTML += `
-      <div class="cart-item">
-        <img src="${item.pictureImg}" alt="${item.name}" width="100">
-        <p>${item.name} ${item.price} sek, ${item.amount}</p> 
-          <img src="img/trashcan.png" alt="remove" >
-      </div>
-    `;
+    html.innerHTML +=
+      "<p>" +
+      item.name +
+      " " +
+      item.price +
+      "sek, " +
+      item.amount +
+      "</p>" +
+      "<img class='basket-img' src='" +
+      item.pictureImg +
+      "'></img>";
   });
 }
 
