@@ -32,47 +32,30 @@ descriptionButton?.addEventListener("click", function () {
   textElement2.classList.toggle("visible");
 });
 
-/*Basket*/
-function toggleCart() {
-  document.getElementById("myshoppingcart").classList.toggle("cart-visable");
+// /* Basket */
+const purchaseButton = document.getElementById("purchase-button");
+const orderProducts = document.getElementById("order-products");
+const trashcanButton = document.getElementById("trashcan");
+
+purchaseButton?.addEventListener("click", function () {
+  orderProducts.style.display = "block";
+  // 2024-03-10 Start help from second year NMD student, Erik sandqvist
+  localStorage.setItem("product", "true");
+  // End help from second year NMD student, Erik sandqvist
+});
+
+trashcanButton?.addEventListener("click", function () {
+  orderProducts.style.display = "none";
+  localStorage.setItem("product", "false");
+});
+
+// 2024-03-10, Start help from ChatGPT, link: https://chatgpt.com/share/67cf5c15-5358-8007-aff5-362d088bca4b
+
+const productInCart = localStorage.getItem("product");
+
+if (productInCart === "true") {
+  orderProducts.style.display = "block"; // Show cart
+} else {
+  orderProducts.style.display = "none"; // Hide cart
 }
-
-let cart = JSON.parse(localStorage.getItem("cart")) || [];
-
-function addToCart(item) {
-  let inCart = cart.find((cartItem) => item.name === cartItem.name);
-  if (inCart) {
-    inCart.amount += 1;
-  } else {
-    item.amount = 1;
-    cart.push(item);
-  }
-  drawCart();
-  saveCart();
-}
-
-function drawCart() {
-  let html = document.getElementById("order-products");
-
-  html.innerHTML = "";
-
-  cart.forEach((item) => {
-    html.innerHTML +=
-      "<p>" +
-      item.name +
-      " " +
-      item.price +
-      "sek, " +
-      item.amount +
-      "</p>" +
-      "<img class='basket-img' src='" +
-      item.pictureImg +
-      "'></img>";
-  });
-}
-
-function saveCart() {
-  localStorage.setItem("cart", JSON.stringify(cart));
-}
-
-drawCart();
+// End help, ChatGPT
