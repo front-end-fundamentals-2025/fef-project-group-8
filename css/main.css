@@ -66,7 +66,7 @@ body {
   z-index: 1;
   top: 0;
   left: 0;
-  background-color: rgb(241, 241, 228);
+  background-color: rgb(241, 241, 228, 0.98);
   overflow-x: hidden;
   padding-top: 2rem;
   transition: 0.5s;
@@ -518,13 +518,6 @@ div.lrmenu a:hover {
 
 /* END of chair.html */
 
-/* CSS for lrmenu.chairs.html */
-#lrmenuchairs {
-  margin-top: 2rem;
-  text-align: center;
-}
-/* END of lrmenu.chairs.html */
-
 /*CSS for checkout.html*/
 /* .checkout {
   padding: 1rem;
@@ -631,6 +624,15 @@ h2 {
   display: none;
 }
 
+#order-products p {
+  color: black;
+}
+
+#order-products {
+  margin-top: 2rem;
+  margin-left: 2rem;
+}
+
 /*Media requires*/
 /*850px*/
 /* Media for buttons in linkheader */
@@ -733,6 +735,16 @@ h2 {
     width: 100%;
   }
 }
+
+/*Livingroom - product page*/
+@media screen and (max-width: 425px) {
+  .products {
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 90%;
+  }
+}
+
 /*Chair - Product page*/
 @media screen and (max-width: 425px) {
   .chair-section {
@@ -740,4 +752,12 @@ h2 {
     grid-template-columns: 1fr;
     align-items: top;
   }
+}
+
+.cart-item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding-right: 1rem;
 }
