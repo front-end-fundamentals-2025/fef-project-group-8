@@ -291,8 +291,8 @@ footer {
 /* CSS for livingroom html */
 #direction,
 #direction2 {
-  padding-top: 1rem;
-  padding-left: 1rem;
+  padding-top: 2rem;
+  padding-left: 2rem;
   color: rgb(114, 114, 114);
 }
 
@@ -301,22 +301,18 @@ footer {
 }
 
 #h1lr {
-  margin-top: 2rem;
+  margin-top: 1rem;
   text-align: center;
 }
 
 /* Different catergories / Livingroom */
 div.lrmenu {
-  /* display: flex;
-  gap: 2rem;
-  margin-top: 2rem; */
-  /* justify-content: center; */
+  justify-content: center;
   display: flex;
   overflow: auto;
   gap: 2rem;
   margin: auto;
   margin-top: 2rem;
-  justify-content: space-around;
 }
 
 div.lrmenu a {
@@ -428,7 +424,7 @@ div.lrmenu a:hover {
   color: black;
   background-color: rgb(215, 215, 170);
   border: none;
-  transform: scale(1.1);
+  transform: scale(1.01);
 }
 
 .product-name {
@@ -639,35 +635,14 @@ h2 {
   }
 }
 /* @media for livingrrom scrollmenu, categories */
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1225px) {
   div.lrmenu {
     display: flex;
+    justify-content: flex-start;
     gap: 2rem;
-    overflow-x: auto;
-    overflow-y: hidden;
-    white-space: nowrap;
-    padding: 1rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
     margin-top: 2rem;
-  }
-
-  div.lrmenu a {
-    display: block;
-    position: relative;
-    text-align: center;
-    text-decoration: none;
-    list-style: none;
-    color: black;
-    background-color: rgb(241, 241, 228);
-    border: 1px solid rgb(241, 241, 228);
-    padding: 8px 16px;
-    transition: all 0.3s;
-    transform: scale(1);
-  }
-
-  div.lrmenu a:hover {
-    color: black;
-    background-color: rgb(233, 233, 203);
-    transform: scale(1.1);
   }
 }
 
@@ -741,11 +716,3 @@ h2 {
     align-items: top;
   }
 }
-
-/* .cart-item {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
-  padding-right: 1rem;
-} */
