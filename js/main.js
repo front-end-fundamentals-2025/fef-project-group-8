@@ -59,3 +59,10 @@ if (productInCart === "true") {
   orderProducts.style.display = "none"; // Hide cart
 }
 // End help, ChatGPT
+
+const paymentButton = document.getElementsById("payment");
+
+paymentButton?.addEventListener("click", function () {
+  orderProducts.style.display = "block";
+  localStorage.clear(); // this clears the entire localStorage
+});

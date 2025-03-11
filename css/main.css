@@ -252,60 +252,6 @@ div.scrollmenu a {
   height: 360px;
 }
 
-/* div.scrollmenu {
-  display: flex;
-  gap: 2rem;
-  background-color: white;
-  overflow-x: auto;
-  overflow-y: hidden;
-  white-space: nowrap;
-  justify-content: center;
-}
-
-div.scrollmenu a {
-  display: block;
-  position: relative;
-  color: black;
-  text-align: center;
-  text-decoration: none;
-  list-style: none;
-}
-
-div.scrollmenu .button {
-  margin: auto;
-  margin-top: 12rem;
-  font-size: 10pt;
-  padding: 8px;
-}
-
-
-/* @media for picture scrollmenu */
-/* Ipads/ medium screens*/
-/* @media screen and (max-width: 800px) {
-  div.scrollmenu div {
-    width: 100%;
-    height: 10rem;
-  }
-
-  div.scrollmenu .button {
-    margin-top: 6rem;
-  }
-}
-
-/* thelephones/ small screens*/
-/* @media screen and (max-width: 600px) {
-  div.scrollmenu div {
-    width: 100%;
-    height: 8rem;
-  }
-
-  div.scrollmenu .button {
-    margin-top: 4rem;
-    font-size: 6pt;
-    padding: 4px;
-  }
-} */
-
 .sale {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -334,6 +280,12 @@ footer {
   grid-template-columns: repeat(2, 1fr);
 }
 
+.linksfooter a {
+  color: black;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
 /* END CSS for Index html */
 
 /* CSS for livingroom html */
@@ -355,10 +307,16 @@ footer {
 
 /* Different catergories / Livingroom */
 div.lrmenu {
-  display: flex;
+  /* display: flex;
   gap: 2rem;
+  margin-top: 2rem; */
+  /* justify-content: center; */
+  display: flex;
+  overflow: auto;
+  gap: 2rem;
+  margin: auto;
   margin-top: 2rem;
-  justify-content: center;
+  justify-content: space-around;
 }
 
 div.lrmenu a {
@@ -454,13 +412,23 @@ div.lrmenu a:hover {
   padding: 1rem;
 }
 
-.purchase-button {
-  background-color: rgb(241, 241, 228);
+#purchase-button {
+  background-color: rgb(233, 233, 203);
   color: black;
   font-weight: bold;
   padding: 1rem 2rem;
   border: none;
   cursor: pointer;
+  text-transform: uppercase;
+  transition: all 0.3s;
+  transform: scale(1);
+}
+
+#purchase-button:hover {
+  color: black;
+  background-color: rgb(215, 215, 170);
+  border: none;
+  transform: scale(1.1);
 }
 
 .product-name {
@@ -489,6 +457,7 @@ div.lrmenu a:hover {
   padding-right: 4rem;
   border: none;
   cursor: pointer;
+  margin: 0;
 }
 
 #hearticon-chair {
@@ -501,32 +470,29 @@ div.lrmenu a:hover {
   gap: 1rem;
 }
 
-.information {
-  font-weight: bold;
-}
-
-#description {
-  display: none;
-}
-
 #measurments.visible {
   display: none;
+}
+
+#information1,
+#information2 {
+  background-color: rgb(241, 241, 228);
+  color: black;
+  padding: 0.5rem;
+  border: none;
 }
 
 #description.visible {
   display: block;
 }
 
+#description {
+  display: none;
+}
+
 /* END of chair.html */
 
 /*CSS for checkout.html*/
-/* .checkout {
-  padding: 1rem;
-  border-radius: 1rem;
-  background-color: rgb(241, 241, 228);
-  width: 60%;
-} */
-
 input[type="text"],
 select {
   background-color: rgb(241, 241, 228);
@@ -562,12 +528,9 @@ h2 {
   margin-top: 1rem;
 }
 
-.payment {
+#payment {
   display: block;
   width: fit-content;
-  text-decoration: none;
-  font-size: 15pt;
-  color: black;
   background-color: rgb(233, 233, 203);
   border: none;
   padding: 8px 16px;
@@ -576,9 +539,16 @@ h2 {
   margin-top: 3rem;
   margin-left: 2.5rem;
   margin-bottom: 10rem;
+  text-transform: uppercase;
 }
 
-.payment:hover {
+#payment a {
+  text-decoration: none;
+  font-size: 15pt;
+  color: black;
+}
+
+#payment:hover {
   color: black;
   background-color: rgb(215, 215, 170);
   border: none;
@@ -631,8 +601,24 @@ h2 {
 
 #order-products {
   display: none;
+}
+
+#order-flex {
   margin-top: 2rem;
   margin-left: 2rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding-right: 1rem;
+}
+
+#order-products img {
+  width: 6rem;
+}
+
+#trashcan img {
+  width: 1rem;
 }
 
 /*Media requires*/
@@ -756,10 +742,10 @@ h2 {
   }
 }
 
-.cart-item {
+/* .cart-item {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
   padding-right: 1rem;
-}
+} */
