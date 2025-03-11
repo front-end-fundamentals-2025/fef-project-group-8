@@ -637,12 +637,9 @@ h2 {
 /* @media for livingrrom scrollmenu, categories */
 @media screen and (max-width: 1225px) {
   div.lrmenu {
-    display: flex;
     justify-content: flex-start;
-    gap: 2rem;
     margin-left: 2rem;
     margin-right: 2rem;
-    margin-top: 2rem;
   }
 }
 
