@@ -60,7 +60,7 @@ if (productInCart === "true") {
 }
 // End help, ChatGPT
 
-const paymentButton = document.getElementsById("payment");
+const paymentButton = document.getElementById("payment");
 
 paymentButton?.addEventListener("click", function () {
   orderProducts.style.display = "block";
