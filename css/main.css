@@ -231,7 +231,7 @@ Payment: Button in payment file, (purchase)*/
   justify-content: flex-end;
   padding-bottom: 3rem;
   height: 20rem;
-  background-image: url(img/homepage2.jpg);
+  background-image: url(../img/homepage2.jpg);
   background-size: cover;
   background-position: center;
 }
