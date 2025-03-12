@@ -17,6 +17,107 @@ body {
 }
 /* END OF BACKGROUND AND FONTS*/
 
+/* CSS FOR BUTTONS */
+/*Button: buttons in index file
+lrmenu: buttons in livingroom file*/
+.buttonsection,
+div.lrmenu {
+  display: flex;
+  gap: 4rem;
+  justify-content: center;
+}
+
+.button {
+  display: block;
+  width: fit-content;
+  font-size: 15pt;
+}
+
+.button,
+div.lrmenu a {
+  text-decoration: none;
+  color: black;
+  background-color: rgb(241, 241, 228);
+  border: none;
+  padding: 8px 16px;
+  transition: all 0.3s;
+  transform: scale(1);
+}
+
+.button:hover,
+div.lrmenu a:hover {
+  color: black;
+  background-color: rgb(233, 233, 203);
+  transform: scale(1.1);
+}
+
+div.lrmenu {
+  overflow: auto;
+  gap: 2rem;
+  margin: auto;
+  margin-top: 2rem;
+}
+
+/*#checkout: button in shoppingcart*/
+.shoppingcart #checkout {
+  border: 1px solid rgb(164, 199, 245);
+  background-color: rgb(164, 199, 245);
+  width: fit-content;
+  padding: 8px 16px;
+  margin: 2rem;
+  transition: all 0.3s;
+  transform: scale(1);
+}
+
+.shoppingcart #checkout:hover {
+  color: black;
+  background-color: rgb(135, 182, 242);
+  border: rgb(135, 182, 242);
+  transform: scale(1.1);
+}
+
+/*Purchase-button: Button in chair file 
+Payment: Button in payment file, (purchase)*/
+#purchase-button,
+#payment {
+  background-color: rgb(233, 233, 203);
+  color: black;
+  font-weight: bold;
+  padding: 1rem 2rem;
+  border: none;
+  cursor: pointer;
+  text-transform: uppercase;
+  transition: all 0.3s;
+  transform: scale(1);
+}
+
+#purchase-button:hover,
+#payment:hover {
+  color: black;
+  background-color: rgb(215, 215, 170);
+  border: none;
+  transform: scale(1.01);
+}
+
+#payment {
+  display: block;
+  width: fit-content;
+  padding: 8px 16px;
+  margin-top: 3rem;
+  margin-left: 2.5rem;
+  margin-bottom: 10rem;
+}
+
+#payment a {
+  text-decoration: none;
+  font-size: 15pt;
+  color: black;
+}
+
+#payment:hover {
+  transform: scale(1.1);
+}
+
 /* CSS for Index html */
 /* HEADER */
 .menu {
@@ -60,7 +161,7 @@ body {
 }
 
 /* Help through W3 schools for the hamburger menu - Accessed: 18-02-25 https://www.w3schools.com/howto/howto_js_mobile_navbar.asp  */
-/* for both hamburgermenu and shoppingcart */
+
 .hamburgermenu,
 .shoppingcart {
   height: 100%;
@@ -120,40 +221,6 @@ body {
   right: 0;
 }
 
-/*Heading in basket*/
-.shoppingcart #order {
-  font-size: 20pt;
-  border-bottom: 2pt solid black;
-  width: fit-content;
-  margin-top: 2rem;
-  margin-left: 2rem;
-}
-
-.shoppingcart #checkout {
-  border: 1px solid rgb(164, 199, 245);
-  background-color: rgb(164, 199, 245);
-  width: fit-content;
-  padding: 8px 16px;
-  margin: 2rem;
-  transition: all 0.3s;
-  transform: scale(1);
-}
-
-.shoppingcart #checkout:hover {
-  color: black;
-  background-color: rgb(135, 182, 242);
-  border: rgb(135, 182, 242);
-  transform: scale(1.1);
-}
-
-.shoppingcart #closebtnshopping {
-  /*Closingtab in basket*/
-  position: absolute;
-  top: 1rem;
-  left: 2rem;
-  font-size: 20pt;
-}
-
 /*END OF HEADER*/
 
 /*MENU BAR*/
@@ -167,37 +234,6 @@ body {
   background-image: url(/img/homepage2.jpg);
   background-size: cover;
   background-position: center;
-}
-
-.buttonsection,
-div.lrmenu {
-  display: flex;
-  gap: 4rem;
-  justify-content: center;
-}
-
-.button {
-  display: block;
-  width: fit-content;
-  font-size: 15pt;
-}
-
-.button,
-div.lrmenu a {
-  text-decoration: none;
-  color: black;
-  background-color: rgb(241, 241, 228);
-  border: none;
-  padding: 8px 16px;
-  transition: all 0.3s;
-  transform: scale(1);
-}
-
-.button:hover,
-div.lrmenu a:hover {
-  color: black;
-  background-color: rgb(233, 233, 203);
-  transform: scale(1.1);
 }
 
 /* END OF MENU BAR*/
@@ -224,17 +260,6 @@ div.scrollmenu img {
   height: 350px;
 }
 
-div.scrollmenu a {
-  display: block;
-  position: relative;
-  color: black;
-  text-align: center;
-  text-decoration: none;
-  list-style: none;
-  width: 250px;
-  height: 360px;
-}
-
 /*Advertising images on homepage*/
 .sale {
   display: grid;
@@ -249,33 +274,10 @@ div.scrollmenu a {
 }
 
 /* END OF MAIN PAGE */
-
-/*FOOTER - LINKS*/
-footer {
-  background-color: rgb(233, 233, 203);
-  margin-top: 6rem;
-  padding-top: 4rem;
-  padding-bottom: 2rem;
-  padding-left: 2rem;
-}
-
-.linksfooter {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-}
-
-.linksfooter a {
-  color: black;
-  font-weight: bold;
-  text-transform: uppercase;
-}
-
 /* END CSS for Index html */
 
-/* CSS for livingroom html */
 /*Direction on page - showing where on the site you are loacted*/
-#direction,
-#direction2 {
+#direction {
   padding-top: 2rem;
   padding-left: 2rem;
   color: rgb(114, 114, 114);
@@ -291,34 +293,7 @@ footer {
   text-align: center;
 }
 
-/* Different catergories / Livingroom */
-div.lrmenu {
-  /* justify-content: center;
-  display: flex; */
-  overflow: auto;
-  gap: 2rem;
-  margin: auto;
-  margin-top: 2rem;
-}
-
-/* div.lrmenu a {
-  text-decoration: none;
-  color: black;
-  background-color: rgb(241, 241, 228);
-  border: 1px solid rgb(241, 241, 228);
-  padding: 8px 16px;
-  transition: all 0.3s;
-  transform: scale(1);
-} */
-
-/* div.lrmenu a:hover {
-  color: black;
-  background-color: rgb(233, 233, 203);
-  border: rgb(233, 233, 203);
-  transform: scale(1.1);
-} */
-
-/*The displayed products*/
+/*The displayed products - Livingroom*/
 .products {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -332,6 +307,7 @@ div.lrmenu {
 }
 
 /*Hoover over img to see another product img*/
+/* Inspiration from W3 schools - Accssesed: 20/02/25 https://www.w3schools.com/howto/howto_css_image_overlay.asp */
 .images img {
   width: 100%;
   transition: opacity 0.5s;
@@ -352,6 +328,7 @@ div.lrmenu {
   width: 100%;
   opacity: 0;
 }
+/*Inspiration from W3 ended*/
 /* END CSS for livingroom html */
 
 /* CSS for chair.html*/
@@ -390,27 +367,6 @@ div.lrmenu {
   flex-direction: column;
   gap: 1rem;
   padding: 1rem;
-}
-
-#purchase-button,
-#payment {
-  background-color: rgb(233, 233, 203);
-  color: black;
-  font-weight: bold;
-  padding: 1rem 2rem;
-  border: none;
-  cursor: pointer;
-  text-transform: uppercase;
-  transition: all 0.3s;
-  transform: scale(1);
-}
-
-#purchase-button:hover,
-#payment:hover {
-  color: black;
-  background-color: rgb(215, 215, 170);
-  border: none;
-  transform: scale(1.01);
 }
 
 .product-name {
@@ -496,12 +452,7 @@ select {
 }
 
 .deliveryinfo {
-  /* padding-top: 1rem; */
-  /* padding-left: 5rem; */
-  /* background-color: rgb(241, 241, 228); */
-  /* width: 70%; */
-  /* padding: 1rem 1rem; */
-  /* border: 1px solid rgb(233, 233, 203); */
+  width: 67%;
   margin-left: 2.5rem;
   margin-top: 1rem;
 }
@@ -514,30 +465,6 @@ select {
 .cardnumber {
   padding-top: 1rem;
   padding-left: 0.5rem;
-}
-
-#payment {
-  display: block;
-  width: fit-content;
-  /* background-color: rgb(233, 233, 203);
-  border: none;
-  transition: all 0.3s;
-  transform: scale(1); */
-  padding: 8px 16px;
-  margin-top: 3rem;
-  margin-left: 2.5rem;
-  margin-bottom: 10rem;
-  /* text-transform: uppercase; */
-}
-
-#payment a {
-  text-decoration: none;
-  font-size: 15pt;
-  color: black;
-}
-
-#payment:hover {
-  transform: scale(1.1);
 }
 
 /*PAYMENT html*/
@@ -559,6 +486,7 @@ select {
   padding-top: 2rem;
   text-align: center;
   color: grey;
+  padding-bottom: 2rem;
 }
 
 @keyframes purchaseiconBounce {
@@ -572,10 +500,30 @@ select {
     transform: scale(1);
   }
 }
-/*Basket*/
+
+/*BASKET*/
+/*Heading in basket*/
+#order {
+  font-size: 20pt;
+  border-bottom: 2pt solid black;
+  width: fit-content;
+  margin-top: 2rem;
+  margin-left: 2rem;
+}
+
+/*Closingtab in basket*/
+.shoppingcart #closebtnshopping {
+  position: absolute;
+  top: 1rem;
+  left: 2rem;
+  font-size: 20pt;
+}
+
+/*Help from NMD student Erik Sandquist*/
 .cart-visable {
   display: block !important;
 }
+/*End of help*/
 
 #myshoppingcart {
   display: none;
@@ -607,8 +555,28 @@ select {
   width: 1rem;
 }
 
+/*FOOTER - LINKS*/
+footer {
+  background-color: rgb(233, 233, 203);
+  margin-top: 6rem;
+  padding-top: 4rem;
+  padding-bottom: 2rem;
+  padding-left: 2rem;
+}
+
+.linksfooter {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.linksfooter a {
+  color: black;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
 /*Media requires*/
-/*850px*/
+/*800px, 850px, 1225px*/
 /* Media for buttons in linkheader */
 @media screen and (max-width: 850px) {
   .buttonsection {
@@ -686,6 +654,15 @@ select {
 }
 
 /*425px*/
+/*Icons in header*/
+@media screen and (max-width: 425px) {
+  .icons img {
+    align-items: left;
+    width: 1.2rem;
+    height: auto;
+  }
+}
+
 /*Media for sale images*/
 @media screen and (max-width: 425px) {
   .sale {
