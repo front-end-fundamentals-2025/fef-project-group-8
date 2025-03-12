@@ -1,4 +1,5 @@
-/* JavaScript for hamburgermenu */
+/* JAVASCRIPT FOR HAMBURGERMENU*/
+// Help through W3 schools - Accessed: 18-02-25 https://www.w3schools.com/howto/howto_js_mobile_navbar.asp
 function openHamburgerNav() {
   document.getElementById("myhamburgermenu").style.display = "block";
 }
@@ -6,8 +7,9 @@ function openHamburgerNav() {
 function closeHamburgerNav() {
   document.getElementById("myhamburgermenu").style.display = "none";
 }
+// Help from w3 schools ended
 
-/* JavaScript for cart items */
+/* JAVASCRIPT FOR CART ITEMS */
 function openShoppingNav() {
   document.getElementById("myshoppingcart").style.display = "block";
 }
@@ -16,7 +18,8 @@ function closeShoppingNav() {
   document.getElementById("myshoppingcart").style.display = "none";
 }
 
-/* Measurments button */
+/* JAVASCRIPT FOR BUTTONS ON THE CHAIR PAGE */
+/* Measurements button*/
 const measurmentsButton = document.getElementById("information1");
 const textElement1 = document.getElementById("measurments");
 
@@ -32,7 +35,7 @@ descriptionButton?.addEventListener("click", function () {
   textElement2.classList.toggle("visible");
 });
 
-// /* Basket */
+/* BASKET */
 const purchaseButton = document.getElementById("purchase-button");
 const orderProducts = document.getElementById("order-products");
 const trashcanButton = document.getElementById("trashcan");

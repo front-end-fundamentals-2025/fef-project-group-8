@@ -59,27 +59,42 @@ body {
   gap: 1rem;
 }
 
-.hamburgermenu {
+/* Help through W3 schools for hamburger menu - Accessed: 18-02-25 https://www.w3schools.com/howto/howto_js_mobile_navbar.asp  */
+/* for both hamburgermenu and shoppingcart */
+.hamburgermenu,
+.shoppingcart {
   height: 100%;
   width: 20rem;
   position: fixed;
   z-index: 1;
   top: 0;
-  left: 0;
   background-color: rgb(241, 241, 228, 0.98);
   overflow-x: hidden;
   padding-top: 2rem;
   transition: 0.5s;
 }
 
-.hamburgermenu a {
-  padding-left: 2rem;
-  padding-bottom: 2rem;
+.hamburgermenu a,
+.shoppingcart a {
   text-decoration: none;
   font-size: 15pt;
   color: rgb(39, 39, 39);
   display: block;
   transition: 0.5s;
+}
+
+.hamburgermenu,
+.shoppingcart {
+  display: none;
+}
+
+.hamburgermenu {
+  left: 0;
+}
+
+.hamburgermenu a {
+  padding-left: 2rem;
+  padding-bottom: 2rem;
 }
 
 .hamburgermenu a:hover {
@@ -94,55 +109,23 @@ body {
   font-size: 20pt;
 }
 
-#openbtnhamburger {
+#openbtnhamburger,
+#openbtnshopping {
   background-color: white;
   border: none;
 }
-
-/* for both hamburgermenu and shoppingcart */
-.hamburgermenu,
-.shoppingcart {
-  display: none;
-}
+/*Help from w3 schools ended*/
 
 .shoppingcart {
-  height: 100%;
-  width: 20rem;
-  position: fixed;
-  z-index: 1;
-  top: 0;
   right: 0;
-  background-color: rgb(241, 241, 228);
-  overflow-x: hidden;
-  padding-top: 2rem;
-  transition: 0.5s;
-}
-
-.shoppingcart a {
-  text-decoration: none;
-  font-size: 15pt;
-  color: rgb(39, 39, 39);
-  display: block;
-  transition: 0.5s;
 }
 
 .shoppingcart #order {
+  /*Heading in basket*/
   font-size: 20pt;
   border-bottom: 2pt solid black;
   width: fit-content;
   margin-top: 2rem;
-  margin-left: 2rem;
-}
-
-.shoppingcart #bluechair {
-  width: 8rem;
-  height: 12rem;
-  margin-top: 2rem;
-  margin-left: 2rem;
-}
-
-.shoppingcart #cartinfo {
-  margin-top: 1rem;
   margin-left: 2rem;
 }
 
@@ -164,15 +147,11 @@ body {
 }
 
 .shoppingcart #closebtnshopping {
+  /*Closingtab in basket*/
   position: absolute;
   top: 1rem;
   left: 2rem;
   font-size: 20pt;
-}
-
-#openbtnshopping {
-  background-color: white;
-  border: none;
 }
 
 /*END OF HEADER*/
@@ -194,7 +173,6 @@ body {
   display: flex;
   gap: 4rem;
   justify-content: center;
-  /* padding-top: 30rem; */
 }
 
 .button {
